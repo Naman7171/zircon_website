@@ -60,26 +60,63 @@
 About us
 ****************/
 #about-us {
-	background-color: white;
-	padding: 20px;
-	height: 400px;
-	margin-top: 54px;
-
-	/* margin: 20px; */
+    background-color: white;
+    padding: 20px;
+    margin-top: 54px;
+    text-align: left; /* Center the content */
 }
 
 #about-us h2 {
-	color: #333;
-	font-size: 24px;
-	text-align: center;
-	font-weight: bold;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; /* Center the content */
+
+}
+
+#about-us .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}    
+
+#about-us img {
+    max-width: 100%; /*Ensure the image is responsive and doesn't exceed its container */
+    margin-right: 20px; /* Adjust margin as needed */
+    margin-left: 20px; /* Adjust margin as needed */
+    margin-top: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px; /* Adjust margin as needed */
 }
 
 #about-us p {
-	color: #666;
-	font-size: 16px;
-	line-height: 1.5;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    max-width: 700px; /* Adjust max-width based on your design */
 }
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    #about-us {
+        padding: 10px;
+    }
+
+    #about-us h2 {
+        font-size: 20px;
+    }
+
+    #about-us img {
+        margin-right: 20px; /* Remove margin on smaller screens */
+        margin-bottom: 20px; /* Add some space below the image */
+    }
+
+    #about-us p {
+        font-size: 14px;
+    }
+}
+
 /* Custom CSS for carousel navigation buttons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
