@@ -28,9 +28,11 @@
    .carousel-item.active {
     display: block;
    } */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Poppins:300,400,500,600,700,800,900');
 .banner {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -38,7 +40,7 @@
 
 .banner img {
     width: 100%;
-    height: auto;
+    height: 490px;
     display: block;
     padding-top: 105px;
 }
@@ -90,11 +92,21 @@ About us
 }
 
 #about-us p {
+    font-family: 'Poppins', sans-serif;
+	font-size: 17px;
+	line-height: 1.71;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.5);
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+	text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    /* font-family: 'Poppins', sans-serif;
     color: #666;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.5; */
     text-align: justify;
-    max-width: 700px; /* Adjust max-width based on your design */
+    max-width: 700px; 
+    /* Adjust max-width based on your design */
 }
 
 /* Responsive Styles */
@@ -118,10 +130,16 @@ About us
 }
 
 /* Custom CSS for carousel navigation buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto; /* Adjust the width as needed */
+    padding: 0.25rem 0.5rem; /* Adjust the padding as needed */
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
-    font-size: 5em; /* Adjust the size as needed */
+    font-size: 1rem; /* Adjust the size as needed */
     color: #333; /* Set a darker color, you can change it to your preferred color */
     font-weight: bold; /* Make the font bolder */
 }
@@ -131,6 +149,7 @@ About us
 .carousel-control-next:hover .carousel-control-next-icon {
     filter: invert(80%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
+
 .owl-carousel.owl-theme.language_slider {
     display: flex;
     flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
