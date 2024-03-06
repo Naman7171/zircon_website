@@ -925,14 +925,62 @@ section
 5. Home
 *********************************/
 
-.home
-{
-	width: 100%;
-	height: 430px;
-	background: #f8f8f8;
+.reg_bg {
+	height: 1542px;
+	background-image: url('images/Aadhar_registration.jpeg');
+	background-size: cover;
+	margin-top: 80px;
+	border-top: solid 20px rgb(37, 26, 1);
+	border-bottom:solid 10px rgb(37, 26, 1) ;
+}
+.banner1 {
+    width: 100%;
+    max-width: 1200px;
+	/* height: 500px; */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.banner1 img {
+    width: 100%;
+    height: 1000px;
+    display: block;
+    padding-top: 105px;
 }
 
-/*********************************
+.banner1-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.banner1-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+	
+	/* images\Aadhar_11.jpg
+	images\Aadhar_registration.jpeg */
+	/* margin-top: 80px;
+    width: 100%;
+    height: 500px;
+    background-image: url('images/Aadhar_registration.jpeg'); */
+    /* background: #c32222; */
+	/* width: 80%;
+	height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-image: url('images/Aadhar_registration.jpeg'); Path to the background image
+    background-size: cover; Cover the entire background
+    background-position: center; Center the background image
+    border-radius: 10px; Add rounded corners
+    color: #fff; Set text color to white
+	
+	/*********************************
 6. Video
 *********************************/
 
@@ -1036,9 +1084,10 @@ section
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	border: solid 2px #2e21df;
+	border: solid 3px #010d73;
 	border-radius: 3px;
-	margin-top: 80px;
+	margin-top: 70px;
+	margin-bottom: 80px;
 	cursor: pointer;
 }
 .register_button a
@@ -1047,9 +1096,9 @@ section
 	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
 	line-height: 39px;
-	font-weight: 700;
+	font-weight: 800;
 	letter-spacing: 0.3em;
-	color: #2e21df;
+	color: #010d73;
 	text-transform: uppercase;
 }
 
@@ -1229,293 +1278,118 @@ section
 }
 
 /*********************************
-9. Footer
+12. Footer
 *********************************/
 
-.footer
-{
-	background: #252525;
+.footer {
+    background: #252525;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.footer_col {
+    padding-right: 40px;
 }
-.footer_col
-{
-	padding-right: 50px;
+
+.footer_col:first-child {
+    padding-right: 20px;
 }
-.footer_col:first-child
-{
-	padding-right: 15px;
+
+.footer_logo a {
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFFFFF;
 }
-.footer_logo
-{
-	margin-top: -10px;
+
+.footer_title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 20px;
 }
-.footer_logo a
-{
-	font-size: 24px;
-	font-weight: 700;
-	color: #FFFFFF;
+
+.footer_lis {
+    margin-top: 20px;
+    padding-left: 0;
 }
-.footer_body
-{
-	padding-top: 43px;
-	padding-bottom: 44px;
+
+.footer_lis li {
+    display: inline-block;
+    margin-right: 20px;
 }
-.footer_title
-{
-	font-size: 14px;
-	font-weight: 700;
-	color: #FFFFFF;
+
+.footer_lis li:not(:last-child) {
+    margin-right: 20px;
 }
-.newsletter_container
-{
-	width: 100%;
-	height: 100%;
+
+.footer_lis li a i {
+    font-size: 20px;
+    color: #4f47e2;
+    padding: 10px;
+    transition: color 0.2s ease;
 }
-.newsletter_form
-{
-	display: block;
-	position: relative;
-	width: 100%;
-	margin-top: 20px;
+
+.footer_lis li a i:hover {
+    color: #d4d3d3;
 }
-.newsletter_input
-{
-	width: 100%;
-	height: 36px;
-	background: transparent;
-	border: none;
-	outline: none;
-	border-bottom: solid 1px #929292;
-	color: #FFFFFF;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
+
+.newsletter_container {
+    width: 100%;
+    height: 100%;
 }
-.newsletter_input::-webkit-input-placeholder
-{
-	font-size: 14px !important;
-	font-weight: 600 !important;
-	color: rgba(255,255,255,0.4) !important;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
+
+.newsletter_form {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
 }
-.newsletter_input:-moz-placeholder
-{
-	font-size: 14px !important;
-	font-weight: 600 !important;
-	color: rgba(255,255,255,0.4) !important;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
+
+.newsletter_input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px #929292;
+    color: #FFFFFF;
+    transition: border-color 0.2s ease;
 }
-.newsletter_input::-moz-placeholder
-{
-	font-size: 14px !important;
-	font-weight: 600 !important;
-	color: rgba(255,255,255,0.4) !important;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-} 
-.newsletter_input:-ms-input-placeholder
-{ 
-	font-size: 14px !important;
-	font-weight: 600 !important;
-	color: rgba(255,255,255,0.4) !important;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
+
+.newsletter_input::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.4);
 }
-.newsletter_input::input-placeholder
-{
-	font-size: 14px !important;
-	font-weight: 600 !important;
-	color: rgba(255,255,255,0.4) !important;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
+
+.newsletter_input:focus {
+    border-bottom-color: #2e21df;
 }
-.newsletter_input:hover::-webkit-input-placeholder,
-.newsletter_input:focus::-webkit-input-placeholder
-{
-	color: rgba(255,255,255,1) !important;
+
+.newsletter_button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
 }
-.newsletter_input:hover:-moz-placeholder,
-.newsletter_input:focus:-moz-placeholder
-{
-	color: rgba(255,255,255,1) !important;
+
+.newsletter_button i {
+    font-size: 20px;
+    color: #7c7c7c;
+    transition: color 0.2s ease;
 }
-.newsletter_input:hover::-moz-placeholder,
-.newsletter_input:focus::-moz-placeholder
-{
-	color: rgba(255,255,255,1) !important;
-} 
-.newsletter_input:hover:-ms-input-placeholder,
-.newsletter_input:focus:-ms-input-placeholder
-{ 
-	color: rgba(255,255,255,1) !important;
+
+.newsletter_button:focus {
+    outline: none;
 }
-.newsletter_input:hover::input-placeholder,
-.newsletter_input:focus::input-placeholder
-{
-	color: rgba(255,255,255,1) !important;
+
+.newsletter_form:hover .newsletter_input::placeholder {
+    color: #FFFFFF;
 }
-.newsletter_button
-{
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 18px;
-	height: 36px;
-	background: transparent;
-	border: none;
-	outline: none;
-}
-.newsletter_button:focus
-{
-	outline: none;
-}
-.newsletter_button i
-{
-	font-size: 16px;
-	color: #7c7c7c;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.newsletter_form:hover .newsletter_input
-{
-	border-bottom: solid 1px #FFFFFF;
-}
-.newsletter_input:focus
-{
-	border-bottom: solid 1px #2e21df !important;
-}
-.newsletter_form:hover .newsletter_button i
-{
-	color: #FFFFFF;
-}
-.footer_list
-{
-	margin-top: 11px;
-}
-.footer_list li a
-{
-	font-size: 12px;
-	font-weight: 500;
-	color: rgba(255,255,255,0.4);
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.footer_list li a:hover
-{
-	color: rgba(255,255,255,1);
-}
-.footer_list li:not(:last-child)
-{
-	margin-bottom: 1px;
-}
-.footer_col:last-child
-{
-	padding-right: 15px;
-}
-.footer_col:nth-child(2) > div
-{
-	left: -30px;
-}
-.footer_col:last-child > div
-{
-	display: inline-block;
-	float: right;
-}
-.copyright
-{
-	width: 100%;
-	background: #1a1a1a;
-}
-.copyright_content
-{
-	width: 100%;
-	height: 49px;
-}
-.cr
-{
-	font-size: 12px;
-	font-weight: 500;
-	color: rgba(255,255,255,0.3);
-}
-.footer_phone,
-.footer_social
-{
-	display: inline-block;
-}
-.footer_social
-{
-	margin-right: -6px;
-}
-.footer_social ul
-{
-	display: inline-block;
-}
-.footer_social ul li
-{
-	display: inline-block;
-}
-.footer_phone
-{
-	font-size: 12px;
-	font-weight: 600;
-	color: rgba(255,255,255,0.2);
-	margin-right: 81px;
-}
-.cr_title
-{
-	font-size: 12px;
-	font-weight: 500;
-	text-transform: uppercase;
-	margin-right: 10px;
-	letter-spacing: 0.075em;
-	text-transform: uppercase;
-	color: rgba(255,255,255,0.2);
-}
-.cr_social_title
-{
-	font-size: 12px;
-	font-weight: 500;
-	color: rgba(255,255,255,0.2);
-	text-transform: uppercase;
-	margin-right: 20px;
-}
-.footer_social ul li a i
-{
-	font-size: 12px;
-    color: rgba(255,255,255,0.2);
-    padding: 6px;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease;
-}
-.footer_social ul li a i:hover
-{
-	color: rgba(255,255,255,1);
+
+.newsletter_form:hover .newsletter_button i {
+    color: #FFFFFF;
 }

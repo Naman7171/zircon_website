@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
     <link href="plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="styles/blog.css">
+    <link rel="stylesheet" type="text/css" href="styles/zircon.css" />
     <link rel="stylesheet" type="text/css" href="styles/blog_responsive.css">
     <script
         nonce="c5c07407-15c7-44b7-9fdf-9e75bb585108">(function (w, d) { !function (j, k, l, m) { j[l] = j[l] || {}; j[l].executed = []; j.zaraz = { deferred: [], listeners: [] }; j.zaraz.q = []; j.zaraz._f = function (n) { return async function () { var o = Array.prototype.slice.call(arguments); j.zaraz.q.push({ m: n, a: o }) } }; for (const p of ["track", "set", "debug"]) j.zaraz[p] = j.zaraz._f(p); j.zaraz.init = () => { var q = k.getElementsByTagName(m)[0], r = k.createElement(m), s = k.getElementsByTagName("title")[0]; s && (j[l].t = k.getElementsByTagName("title")[0].text); j[l].x = Math.random(); j[l].w = j.screen.width; j[l].h = j.screen.height; j[l].j = j.innerHeight; j[l].e = j.innerWidth; j[l].l = j.location.href; j[l].r = k.referrer; j[l].k = j.screen.colorDepth; j[l].n = k.characterSet; j[l].o = (new Date).getTimezoneOffset(); if (j.dataLayer) for (const w of Object.entries(Object.entries(dataLayer).reduce(((x, y) => ({ ...x[1], ...y[1] })), {}))) zaraz.set(w[0], w[1], { scope: "page" }); j[l].q = []; for (; j.zaraz.q.length;) { const z = j.zaraz.q.shift(); j[l].q.push(z) } r.defer = !0; for (const A of [localStorage, sessionStorage]) Object.keys(A || {}).filter((C => C.startsWith("_zaraz_"))).forEach((B => { try { j[l]["z_" + B.slice(7)] = JSON.parse(A.getItem(B)) } catch { j[l]["z_" + B.slice(7)] = A.getItem(B) } })); r.referrerPolicy = "origin"; r.src = "../../cdn-cgi/zaraz/sd0d9.js?z=" + btoa(encodeURIComponent(JSON.stringify(j[l]))); q.parentNode.insertBefore(r, q) };["complete", "interactive"].includes(k.readyState) ? zaraz.init() : j.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
@@ -45,12 +46,12 @@
                                 </div>
                                 <nav class="main_nav_contaner">
                                     <ul class="main_nav">
-                                        <li ><a href="index.html">Home</a></li>
+                                        <li><a href="index.html">Home</a></li>
                                         <!-- <li><a href="about_us.html">About Us</a></li> -->
                                         <li><a href="courses.html">Events</a></li>
-                                        <li><a href="instructors.html">Instructors</a></li>
-                                        <!-- <li><a href="#">Events</a></li> -->
                                         <li class="active"><a href="blog.html">Aadhar</a></li>
+                                        <li><a href="instructors.html">Registration</a></li>
+                                        <!-- <li><a href="#">Events</a></li> -->
                                         <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </nav>
@@ -65,313 +66,294 @@
         </header>
     </div>
 
-        <div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
-            <div class="menu_close_container">
-                <div class="menu_close">
-                    <div></div>
-                    <div></div>
-                </div>
+    <div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+        <div class="menu_close_container">
+            <div class="menu_close">
+                <div></div>
+                <div></div>
             </div>
-            <div class="search">
-                <form action="#" class="header_search_form menu_mm">
-                    <input type="search" class="search_input menu_mm" placeholder="Search" required="required">
-                    <button
-                        class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
-                        <i class="fa fa-search menu_mm" aria-hidden="true"></i>
-                    </button>
-                </form>
-            </div>
-            <nav class="menu_nav">
-                <ul class="menu_mm">
-                    <li class="menu_mm"><a href="index.html">Home</a></li>
-                    <li class="menu_mm"><a href="courses.html">Courses</a></li>
-                    <li class="menu_mm"><a href="instructors.html">Instructors</a></li>
-                    <li class="menu_mm"><a href="#">Events</a></li>
-                    <li class="menu_mm"><a href="blog.html">Blog</a></li>
-                    <li class="menu_mm"><a href="contact.html">Contact</a></li>
+        </div>
+        <div class="search">
+            <form action="#" class="header_search_form menu_mm">
+                <input type="search" class="search_input menu_mm" placeholder="Search" required="required">
+                <button
+                    class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+                    <i class="fa fa-search menu_mm" aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>
+        <nav class="menu_nav">
+            <ul class="menu_mm">
+                <li class="menu_mm"><a href="index.html">Home</a></li>
+                <li class="menu_mm"><a href="courses.html">Courses</a></li>
+                <li class="menu_mm"><a href="instructors.html">Instructors</a></li>
+                <li class="menu_mm"><a href="#">Events</a></li>
+                <li class="menu_mm"><a href="blog.html">Blog</a></li>
+                <li class="menu_mm"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu_extra">
+            <div class="menu_phone"><span class="menu_title">phone:</span>+44 300 303 0266</div>
+            <div class="menu_social">
+                <span class="menu_title">follow us</span>
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                 </ul>
-            </nav>
-            <div class="menu_extra">
-                <div class="menu_phone"><span class="menu_title">phone:</span>+44 300 303 0266</div>
-                <div class="menu_social">
-                    <span class="menu_title">follow us</span>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
             </div>
         </div>
+    </div>
 
-        <div class="home">
-        </div>
+    <div class="home">
+    </div>
 
-        <div class="blog">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="welcome_title">Welcome to our blog!</div>
-                    </div>
+    <div class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="welcome_title">AADHAR</div>
                 </div>
-                <div class="row categories_row">
+                <div class="blog_post_text" style="text-align: justify;">
+                    <p>Poornima College of Engineering proudly presents 'Aadhar,' a dynamic and visionary technical
+                        event aimed at exploring innovation and cutting-edge technology. Inspired by the foundational
+                        essence of India's Aadhaar system, 'Aadhar' delves deep into technological advancements,
+                        societal impact, and futuristic solutions. Engage in insightful symposiums led by industry
+                        experts, witness captivating showcases of cutting-edge projects, and put your skills to the test
+                        in thrilling tech competitions. Dive into immersive hands-on workshops, connect with seasoned
+                        industry professionals, and seize the opportunity to explore potential career pathways. 'Aadhar'
+                        isn't just another technical event—it's an immersive experience meticulously crafted to inspire,
+                        educate, and empower the next generation of innovators and technologists. Join us on 11th March
+                        2024 at Poornima College Of Engineering for an unforgettable journey of exploration, innovation,
+                        and
+                        transformation. See you at 'Aadhar'! Don't miss out on this extraordinary opportunity to expand
+                        your horizons, ignite your passion for technology, and become part of a vibrant community of
+                        innovators and changemakers.</p>
+                </div>
+            </div>
+            <div class="row categories_row">
 
-                    <div class="col-xl-2 col-lg-4 col-md-6 blog_category_col">
-                        <a href="blog.html">
-                            <div class="blog_category">
-                                <div class="blog_category_image"><img src="images/blog_1.jpg" alt></div>
-                                <div class="blog_category_title">travel</div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-xl-2 col-lg-4 col-md-6 blog_category_col">
-                        <a href="blog.html">
-                            <div class="blog_category">
-                                <div class="blog_category_image"><img src="images/blog_2.jpg" alt></div>
-                                <div class="blog_category_title">languages</div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-xl-2 col-lg-4 col-md-6 blog_category_col">
-                        <a href="blog.html">
-                            <div class="blog_category">
-                                <div class="blog_category_image"><img src="images/blog_3.jpg" alt></div>
-                                <div class="blog_category_title">cultures</div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-xl-2 col-lg-4 col-md-6 blog_category_col">
-                        <a href="blog.html">
-                            <div class="blog_category">
-                                <div class="blog_category_image"><img src="images/blog_4.jpg" alt></div>
-                                <div class="blog_category_title">fashion</div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-xl-2 col-lg-4 col-md-6 blog_category_col">
-                        <a href="blog.html">
-                            <div class="blog_category">
-                                <div class="blog_category_image"><img src="images/blog_5.jpg" alt></div>
-                                <div class="blog_category_title">cooking</div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-xl-2 col-lg-4 col-md-6 blog_category_col">
-                        <a href="blog.html">
-                            <div class="blog_category">
-                                <div class="blog_category_image"><img src="images/blog_6.jpg" alt></div>
-                                <div class="blog_category_title">hobbies</div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="col-xl-2 col-lg-4 col-md-6 blog_category_col">
+                    <a href="#ev1">
+                        <div class="blog_category">
+                            <div class="blog_category_image"><img src="images/Aadhar_11.jpg" alt></div>
+                            <div class="blog_category_title">Aadhar XI</div>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="row blog_row">
-
-                    <div class="col-lg-6">
-                        <div class="blog_post">
-                            <div class="blog_image" style="background-image:url(images/blog_7.jpg)"></div>
-                            <div class="blog_title_container">
-                                <div class="blog_post_category"><a href="#">travel</a></div>
-                                <div class="blog_post_title"><a href="blog_single.html">Design Better Forms</a></div>
-                                <div class="blog_post_text">
-                                    <p>Whether it is a signup flow, a multi-view stepper, or a monotonous data entry
-                                        interface, forms are one of the most important components of digital product
-                                        design.</p>
-                                </div>
-                                <div class="read_more"><a href="blog_single.html">Read More <img src="images/right.png"
-                                            alt></a></div>
-                            </div>
+                <div class="col-xl-2 col-lg-4 col-md-6 blog_category_col">
+                    <a href="#ev2">
+                        <div class="blog_category">
+                            <div class="blog_category_image"><img src="images/Aadhar_10.jpg" alt></div>
+                            <div class="blog_category_title">Aadhar X</div>
                         </div>
-                    </div>
+                    </a>
+                </div>
 
-                    <div class="col-lg-6">
-                        <div class="blog_post">
-                            <div class="blog_image" style="background-image:url(images/blog_8.jpg)"></div>
-                            <div class="blog_title_container">
-                                <div class="blog_post_category"><a href="#">travel</a></div>
-                                <div class="blog_post_title"><a href="blog_single.html">Art Helps Healing</a></div>
-                                <div class="blog_post_text">
-                                    <p>Whether it is a signup flow, a multi-view stepper, or a monotonous data entry
-                                        interface, forms are one of the most important components of digital product
-                                        design.</p>
-                                </div>
-                                <div class="read_more"><a href="blog_single.html">Read More <img src="images/right.png"
-                                            alt></a></div>
-                            </div>
+                <div class="col-xl-2 col-lg-4 col-md-6 blog_category_col">
+                    <a href="#ev3">
+                        <div class="blog_category">
+                            <div class="blog_category_image"><img src="images/Aadhar_9.jpg" alt></div>
+                            <div class="blog_category_title">Aadhar IX</div>
                         </div>
-                    </div>
+                    </a>
+                </div>
 
-                    <div class="col-lg-6">
-                        <div class="blog_post">
-                            <div class="blog_image" style="background-image:url(images/blog_9.jpg)"></div>
-                            <div class="blog_title_container">
-                                <div class="blog_post_category"><a href="#">travel</a></div>
-                                <div class="blog_post_title"><a href="blog_single.html">Art Helps Healing</a></div>
-                                <div class="blog_post_text">
-                                    <p>Whether it is a signup flow, a multi-view stepper, or a monotonous data entry
-                                        interface, forms are one of the most important components of digital product
-                                        design.</p>
-                                </div>
-                                <div class="read_more"><a href="blog_single.html">Read More <img src="images/right.png"
-                                            alt></a></div>
-                            </div>
+                <div class="col-xl-2 col-lg-4 col-md-6 blog_category_col">
+                    <a href="#ev4">
+                        <div class="blog_category">
+                            <div class="blog_category_image"><img src="images/Aadhar_8.jpg" alt></div>
+                            <div class="blog_category_title">Aadhar VII</div>
                         </div>
-                    </div>
+                    </a>
+                </div>
 
-                    <div class="col-lg-6">
-                        <div class="blog_post">
-                            <div class="blog_image" style="background-image:url(images/blog_10.jpg)"></div>
-                            <div class="blog_title_container">
-                                <div class="blog_post_category"><a href="#">travel</a></div>
-                                <div class="blog_post_title"><a href="blog_single.html">Art Helps Healing</a></div>
-                                <div class="blog_post_text">
-                                    <p>Whether it is a signup flow, a multi-view stepper, or a monotonous data entry
-                                        interface, forms are one of the most important components of digital product
-                                        design.</p>
-                                </div>
-                                <div class="read_more"><a href="blog_single.html">Read More <img src="images/right.png"
-                                            alt></a></div>
-                            </div>
+                <div class="col-xl-2 col-lg-4 col-md-6 blog_category_col">
+                    <a href="#ev5">
+                        <div class="blog_category">
+                            <div class="blog_category_image"><img src="images/Aadhar_7.jpg" alt></div>
+                            <div class="blog_category_title">Aadhar VII</div>
                         </div>
-                    </div>
+                    </a>
+                </div>
 
-                    <div class="col-lg-6">
-                        <div class="blog_post">
-                            <div class="blog_image" style="background-image:url(images/blog_11.jpg)"></div>
-                            <div class="blog_title_container">
-                                <div class="blog_post_category"><a href="#">travel</a></div>
-                                <div class="blog_post_title"><a href="blog_single.html">Art Helps Healing</a></div>
-                                <div class="blog_post_text">
-                                    <p>Whether it is a signup flow, a multi-view stepper, or a monotonous data entry
-                                        interface, forms are one of the most important components of digital product
-                                        design.</p>
-                                </div>
-                                <div class="read_more"><a href="blog_single.html">Read More <img src="images/right.png"
-                                            alt></a></div>
-                            </div>
+                <div class="col-xl-2 col-lg-4 col-md-6 blog_category_col">
+                    <a href="#ev6">
+                        <div class="blog_category">
+                            <div class="blog_category_image"><img src="images/Aadhar_6.jpg" alt></div>
+                            <div class="blog_category_title">Aadhar VI</div>
                         </div>
-                    </div>
+                    </a>
+                </div>
+            </div>
 
-                    <div class="col-lg-6">
-                        <div class="blog_post">
-                            <div class="blog_image" style="background-image:url(images/blog_12.jpg)"></div>
-                            <div class="blog_title_container">
-                                <div class="blog_post_category"><a href="#">travel</a></div>
-                                <div class="blog_post_title"><a href="blog_single.html">Art Helps Healing</a></div>
-                                <div class="blog_post_text">
-                                    <p>Whether it is a signup flow, a multi-view stepper, or a monotonous data entry
-                                        interface, forms are one of the most important components of digital product
-                                        design.</p>
-                                </div>
-                                <div class="read_more"><a href="blog_single.html">Read More <img src="images/right.png"
-                                            alt></a></div>
+            <div class="row blog_row">
+
+                <div class="col-lg-6" id="ev1">
+                    <div class="blog_post">
+                        <div class="blog_image" style="background-image:url(images/aadhar_6a.JPG)"></div>
+                        <div class="blog_title_container">
+                            <div class="blog_post_category"><a href="#">Health-Tech Revolution: for Wellness</a></div>
+                            <div class="blog_post_title"><a href="#">Aadhar XI</a></div>
+                            <div class="blog_post_text">
+                                <p>Delve into how healthcare and technology intersect, showcasing advancements in
+                                    medical devices, telemedicine, health tracking apps, and AI-driven diagnostics
+                                    revolutionizing patient care, enhancing accuracy, and making healthcare more
+                                    accessible and personalized.
+                                </p>
                             </div>
+                            <!-- <div class="read_more"><a href="blog_single.html">Read More <img src="images/right.png"
+                                            alt></a></div> -->
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="col-lg-6" id="ev2">
+                    <div class="blog_post">
+                        <div class="blog_image" style="background-image:url(images/aadhar_1a.JPG)"></div>
+                        <div class="blog_title_container">
+                            <div class="blog_post_category"><a href="#">Empowering Through Education Technology</a>
+                            </div>
+                            <!-- <br> -->
+                            <div class="blog_post_title"><a href="#">Aadhar X</a></div>
+                            <div class="blog_post_text">
+                                <p>Examine how the advent of educational technology is transforming the learning
+                                    landscape with innovative e-learning platforms, interactive tools, and personalized
+                                    experiences, making quality education more accessible, engaging, and tailored to
+                                    individual needs.</p>
+                            </div>
+                            <!-- <div class="read_more"><a href="blog_single.html">Read More <img src="images/right.png"
+                                            alt></a></div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" id="ev3">
+                    <div class="blog_post">
+                        <div class="blog_image" style="background-image:url(images/aadhar_2a.JPG)"></div>
+                        <div class="blog_title_container">
+                            <div class="blog_post_category"><a href="#">Smart Cities: Building Tomorrow's Urban
+                                    Spaces</a></div>
+                            <!-- <br> -->
+                            <div class="blog_post_title"><a href="#">Aadhar IX</a></div>
+                            <div class="blog_post_text">
+                                <p>Explore how smart cities utilize cutting-edge technology-driven solutions for
+                                    improving transportation, infrastructure, healthcare, and governance, thus creating
+                                    more efficient, sustainable, and livable urban environments for future generations.
+                                </p>
+                            </div>
+                            <!-- <div class="read_more"><a href="blog_single.html">Read More <img src="images/right.png"
+                                            alt></a></div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" id="ev4">
+                    <div class="blog_post">
+                        <div class="blog_image" style="background-image:url(images/aadhar_3a.JPG)"></div>
+                        <div class="blog_title_container">
+                            <div class="blog_post_category"><a href="#">Cybersecurity in the Digital Age</a></div>
+                            <!-- <br> -->
+                            <div class="blog_post_title"><a href="#">Aadhar VIII</a></div>
+                            <div class="blog_post_text">
+                                <p>Focus on the increasingly critical role of cybersecurity in protecting sensitive data
+                                    and systems against the backdrop of evolving cyber threats, emphasizing the ongoing
+                                    need for robust, proactive security practices.
+                                </p>
+                            </div>
+                            <!-- <div class="read_more"><a href="blog_single.html">Read More <img src="images/right.png"
+                                            alt></a></div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" id="ev5">
+                    <div class="blog_post">
+                        <div class="blog_image" style="background-image:url(images/aadhar_4a.JPG)"></div>
+                        <div class="blog_title_container">
+                            <div class="blog_post_category"><a href="#">Digital Transformation: Shaping the Future</a>
+                            </div>
+                            <!-- <br> -->
+                            <div class="blog_post_title"><a href="#">Aadhar VII</a></div>
+                            <div class="blog_post_text">
+                                <p>Dive into how the integration of IoT, AI, blockchain, and cloud computing are not
+                                    just revolutionizing industries but also reshaping business models and enhancing
+                                    daily life in our rapidly evolving digital landscape.</p>
+                            </div>
+                            <!-- <div class="read_more"><a href="blog_single.html">Read More <img src="images/right.png"
+                                            alt></a></div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" id="ev6">
+                    <div class="blog_post">
+                        <div class="blog_image" style="background-image:url(images/aadhar_5a.JPG)"></div>
+                        <div class="blog_title_container">
+                            <div class="blog_post_category"><a href="#">Innovative Technologies for Sustainable
+                                    Living</a></div>
+                            <!-- <br> -->
+                            <div class="blog_post_title"><a href="#">Aadhar VI</a></div>
+                            <div class="blog_post_text">
+                                <p>Explore the crucial role of emerging technologies in enhancing sustainability across
+                                    energy conservation, waste management, and eco-friendly practices, leading the
+                                    charge towards a greener, more sustainable future.
+                                </p>
+                            </div>
+                            <!-- <div class="read_more"><a href="blog_single.html">Read More <img src="images/right.png"
+                                            alt></a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="row">
                     <div class="col">
                         <div class="load_more_button"><a href="#">load more</a></div>
                     </div>
+                </div> -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 footer_col">
+                        <div class="newsletter_container d-flex flex-column align-items-start justify-content-end">
+                            <div class="footer_logo mb-auto"><a href="#">Zircon</a></div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 footer_col">
+                        <div class="footer_title">Social Media</div>
+                        <ul class="footer_lis">
+                            <li>
+                                <a href="https://www.facebook.com/pcezirconclub?mibextid=rS40aB7S9Ucbxw6v" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/zirconclub?igsh=MWQ5M2pobXdiYTUwYw==" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-lg-4 footer_col">
+                        <div class="newsletter_container d-flex flex-column align-items-start justify-content-end">
+                            <div class="footer_title">Get connected with us</div>
+                            <form action="#" id="newsletter_form" class="newsletter_form">
+                                <input type="email" class="newsletter_input" placeholder="Email" required="required">
+                                <button class="newsletter_button"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <footer class="footer">
-            <div class="footer_body">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-3 footer_col">
-                            <div class="newsletter_container d-flex flex-column align-items-start justify-content-end">
-                                <div class="footer_logo mb-auto"><a href="#">Lingua</a></div>
-                                <div class="footer_title">Subscribe</div>
-                                <form action="#" id="newsletter_form" class="newsletter_form">
-                                    <input type="email" class="newsletter_input" placeholder="Email"
-                                        required="required">
-                                    <button class="newsletter_button"><i class="fa fa-long-arrow-right"
-                                            aria-hidden="true"></i></button>
-                                </form>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-2 offset-lg-3 footer_col">
-                            <div>
-                                <div class="footer_title">About Us</div>
-                                <ul class="footer_list">
-                                    <li><a href="#">Courses</a></li>
-                                    <li><a href="#">Team</a></li>
-                                    <li><a href="#">Brand Guidelines</a></li>
-                                    <li><a href="#">Jobs</a></li>
-                                    <li><a href="#">Advertise with us</a></li>
-                                    <li><a href="#">Press</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-2 footer_col">
-                            <div class="footer_title">Help & Support</div>
-                            <ul class="footer_list">
-                                <li><a href="#">Discussions</a></li>
-                                <li><a href="#">Troubleshooting</a></li>
-                                <li><a href="#">Duolingo FAQs</a></li>
-                                <li><a href="#">Schools FAQs</a></li>
-                                <li><a href="#">Duolingo English Test FAQs</a></li>
-                                <li><a href="#">Status</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-lg-2 footer_col clearfix">
-                            <div>
-                                <div class="footer_title">Privacy & Terms</div>
-                                <ul class="footer_list">
-                                    <li><a href="#">Community Guidelines</a></li>
-                                    <li><a href="#">Terms</a></li>
-                                    <li><a href="#">Brand Guidelines</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div
-                                class="copyright_content d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-start">
-                                <div class="cr">
-                                    Copyright &copy;
-                                    <script>document.write(new Date().getFullYear());</script> All rights reserved |
-                                    This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
-                                        href="https://colorlib.com/" target="_blank">Colorlib</a>
-                                </div>
-                                <div class="cr_right ml-md-auto">
-                                    <div class="footer_phone"><span class="cr_title">phone:</span>+44 300 303 0266</div>
-                                    <div class="footer_social">
-                                        <span class="cr_social_title">follow us</span>
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    </footer>
     </div>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="styles/bootstrap4/popper.js"></script>

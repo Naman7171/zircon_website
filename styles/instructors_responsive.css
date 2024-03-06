@@ -68,11 +68,11 @@
 		width: 152px;
 		left: 134px;
 	}
-	.video_container_outer
+	.reg_bg
 	{
 		height: calc(609px / 1.779);
 	}
-	.video_content
+	.reg_bg
 	{
 		margin-top: calc(-1 * (609px / 1.875) / 2);
 	}
@@ -359,4 +359,19 @@
 @media only screen and (max-width: 400px)
 {
 	
+}
+@media (max-width: 768px) {
+    .reg_bg {
+        height: 100vh;
+        border-top: solid 5vw rgb(37, 26, 1);
+        border-bottom: solid 2.5vw rgb(37, 26, 1);
+    }
+}
+
+@media (max-width: 576px) {
+    .reg_bg {
+        height: auto;
+        border-top: solid 3vw rgb(37, 26, 1);
+        border-bottom: solid 1.5vw rgb(37, 26, 1);
+    }
 }

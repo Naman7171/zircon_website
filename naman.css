@@ -32,7 +32,25 @@
 ***********/
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Poppins:300,400,500,600,700,800,900');
-
+#reg_bg {
+	/* images\Aadhar_11.jpg
+	images\Aadhar_registration.jpeg */
+	/* margin-top: 80px;
+    width: 100%;
+    height: 500px;
+    background-image: url('images/Aadhar_registration.jpeg'); */
+    /* background: #c32222; */
+	width: 100%;
+	height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    /* text-align: center; */
+    background-image: url('images/Aadhar_registration.jpeg'); /* Path to the background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    /* border-radius: 10px; Add rounded corners */
+    /* color: #fff; Set text color to white */
+}
 /*********************************
 2. Body and some general stuff
 *********************************/
@@ -949,7 +967,25 @@ section
 /*********************************
 5. Home
 *********************************/
-
+.reg_bg {
+	/* images\Aadhar_11.jpg
+	images\Aadhar_registration.jpeg */
+	/* margin-top: 80px;
+    width: 100%;
+    height: 500px;
+    background-image: url('images/Aadhar_registration.jpeg'); */
+    /* background: #c32222; */
+	width: 100%;
+	height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    /* text-align: center; */
+    background-image: url('images/Aadhar_registration.jpeg'); /* Path to the background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    /* border-radius: 10px; Add rounded corners */
+    /* color: #fff; Set text color to white */
+}
 .home
 {
 	width: 100%;
